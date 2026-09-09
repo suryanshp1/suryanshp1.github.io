@@ -30,10 +30,12 @@
 /* ─── Reset & base ───────────────────────────────────────── */
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;background:var(--bg)}
-body{margin:0;background:var(--bg);color:var(--ink);font-size:15px;line-height:1.6;overflow-x:hidden;transition:background .35s,color .35s}
+body{margin:0;background:var(--bg);color:var(--ink);font-size:15px;line-height:1.6;overflow-x:hidden;transition:background .35s,color .35s,filter .35s}
 a{color:inherit}
 button{color:inherit}
 ::selection{background:var(--acid);color:var(--acid-ink)}
+@keyframes flash-effect{0%{filter:brightness(1)}30%{filter:brightness(1.5) contrast(1.1)}100%{filter:brightness(1)}}
+body.theme-transitioning{animation:flash-effect .4s ease-out}
 .inner{width:min(var(--max),calc(100% - var(--gutter)*2));margin-inline:auto}
 .grid-section{
   border-inline:1px solid var(--line-soft);
@@ -75,7 +77,11 @@ button{color:inherit}
   border:1px solid var(--line);border-radius:50%;
   background:transparent;cursor:pointer
 }
-.theme-toggle svg{width:16px;fill:none;stroke:currentColor;stroke-width:1.6}
+.theme-toggle svg{width:16px;fill:none;stroke:currentColor;stroke-width:1.6;transition:transform .2s cubic-bezier(.34,1.56,.64,1)}
+.theme-toggle:active svg{transform:scale(.85) rotate(-15deg)}
+.theme-toggle .icon-moon{display:none}
+[data-theme=light] .theme-toggle .icon-sun{display:none}
+[data-theme=light] .theme-toggle .icon-moon{display:block}
 
 /* ─── Hero — masthead layout ─────────────────────────────── */
 .hero{min-height:auto;padding:16px 16px 0;overflow:visible}
