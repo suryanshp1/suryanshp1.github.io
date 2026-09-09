@@ -1,0 +1,23 @@
+{
+  "name": "Suryansh Pandey — Full Stack & AI Systems Engineer",
+  "short_name": "Suryansh",
+  "description": "Full stack and AI systems engineer building distributed systems, security automation, and useful AI products.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b0d0c",
+  "theme_color": "#0b0d0c",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "/favicon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
