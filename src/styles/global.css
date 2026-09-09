@@ -413,10 +413,12 @@ h2{font-size:clamp(34px,4.5vw,58px)}
   font-family:'DM Mono',monospace;
   font-size:9px;font-weight:600;line-height:1
 }
-.skill-pill[data-group='frontend'] .skill-icon{background:rgba(162,167,163,.12)}
+.skill-pill[data-group='languages'] .skill-icon{background:rgba(162,167,163,.12)}
 .skill-pill[data-group='backend'] .skill-icon{background:rgba(145,150,146,.12)}
-.skill-pill[data-group='tools'] .skill-icon{background:rgba(129,134,130,.12)}
-.skill-pill[data-group='design'] .skill-icon{background:rgba(121,127,123,.12)}
+.skill-pill[data-group='frontend'] .skill-icon{background:rgba(129,134,130,.12)}
+.skill-pill[data-group='databases'] .skill-icon{background:rgba(121,127,123,.12)}
+.skill-pill[data-group='ai'] .skill-icon{background:rgba(100,105,101,.12)}
+.skill-pill[data-group='cloud'] .skill-icon{background:rgba(85,90,87,.12)}
 
 /* ─── CDC visual card ────────────────────────────────────── */
 .cdc-visual{display:flex;flex-direction:column;justify-content:space-between;background:#111916;color:#e8f1e7}

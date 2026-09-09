@@ -123,33 +123,52 @@ import '../styles/global.css';
       </div>
       <div class="skills-tabs" role="tablist" aria-label="Skill categories">
         <button class="skill-tab active" type="button" data-filter="all" aria-pressed="true">All</button>
-        <button class="skill-tab" type="button" data-filter="frontend" aria-pressed="false">Frontend</button>
+        <button class="skill-tab" type="button" data-filter="languages" aria-pressed="false">Languages</button>
         <button class="skill-tab" type="button" data-filter="backend" aria-pressed="false">Backend</button>
-        <button class="skill-tab" type="button" data-filter="design" aria-pressed="false">Design</button>
-        <button class="skill-tab" type="button" data-filter="tools" aria-pressed="false">Tools</button>
+        <button class="skill-tab" type="button" data-filter="frontend" aria-pressed="false">Frontend</button>
+        <button class="skill-tab" type="button" data-filter="databases" aria-pressed="false">Databases</button>
+        <button class="skill-tab" type="button" data-filter="ai" aria-pressed="false">AI</button>
+        <button class="skill-tab" type="button" data-filter="cloud" aria-pressed="false">Cloud</button>
       </div>
     </div>
 
     <div class="skills-grid">
-      <div class="skill-pill" data-group="frontend"><span class="skill-icon">JS</span><span>JavaScript</span></div>
-      <div class="skill-pill" data-group="frontend"><span class="skill-icon">TS</span><span>TypeScript</span></div>
+      <!-- Languages -->
+      <div class="skill-pill" data-group="languages"><span class="skill-icon">PY</span><span>Python</span></div>
+      <div class="skill-pill" data-group="languages"><span class="skill-icon">JS</span><span>JavaScript</span></div>
+      <div class="skill-pill" data-group="languages"><span class="skill-icon">TS</span><span>TypeScript</span></div>
+
+      <!-- Backend & Systems -->
+      <div class="skill-pill" data-group="backend"><span class="skill-icon">Dj</span><span>Django</span></div>
+      <div class="skill-pill" data-group="backend"><span class="skill-icon">FA</span><span>FastAPI</span></div>
+      <div class="skill-pill" data-group="backend"><span class="skill-icon">GQL</span><span>GraphQL</span></div>
+      <div class="skill-pill" data-group="backend"><span class="skill-icon">gRPC</span><span>gRPC</span></div>
+      <div class="skill-pill" data-group="backend"><span class="skill-icon">Cel</span><span>Celery</span></div>
+      <div class="skill-pill" data-group="backend"><span class="skill-icon">RMQ</span><span>RabbitMQ</span></div>
+      <div class="skill-pill" data-group="backend"><span class="skill-icon">Kaf</span><span>Kafka</span></div>
+
+      <!-- Frontend -->
       <div class="skill-pill" data-group="frontend"><span class="skill-icon">⚛</span><span>React</span></div>
-      <div class="skill-pill" data-group="frontend"><span class="skill-icon">N</span><span>Next.js</span></div>
-      <div class="skill-pill" data-group="frontend"><span class="skill-icon">~</span><span>Tailwind CSS</span></div>
-      <div class="skill-pill" data-group="frontend"><span class="skill-icon">✦</span><span>Framer Motion</span></div>
+      <div class="skill-pill" data-group="frontend"><span class="skill-icon">N</span><span>NextJS</span></div>
+      <div class="skill-pill" data-group="frontend"><span class="skill-icon">A</span><span>AstroJS</span></div>
 
-      <div class="skill-pill" data-group="backend"><span class="skill-icon">JS</span><span>Node.js</span></div>
-      <div class="skill-pill" data-group="backend"><span class="skill-icon">ex</span><span>Express.js</span></div>
-      <div class="skill-pill" data-group="backend"><span class="skill-icon">◌</span><span>MongoDB</span></div>
-      <div class="skill-pill" data-group="backend"><span class="skill-icon">*</span><span>JWT</span></div>
+      <!-- Databases -->
+      <div class="skill-pill" data-group="databases"><span class="skill-icon">PG</span><span>PostgreSQL</span></div>
+      <div class="skill-pill" data-group="databases"><span class="skill-icon">◌</span><span>MongoDB</span></div>
+      <div class="skill-pill" data-group="databases"><span class="skill-icon">ES</span><span>Elasticsearch</span></div>
+      <div class="skill-pill" data-group="databases"><span class="skill-icon">Red</span><span>Redis</span></div>
 
-      <div class="skill-pill" data-group="tools"><span class="skill-icon">⌁</span><span>Git</span></div>
-      <div class="skill-pill" data-group="tools"><span class="skill-icon">◫</span><span>GitHub</span></div>
-      <div class="skill-pill" data-group="tools"><span class="skill-icon">△</span><span>Vercel</span></div>
-      <div class="skill-pill" data-group="tools"><span class="skill-icon">◔</span><span>Postman</span></div>
-      <div class="skill-pill" data-group="tools"><span class="skill-icon">↗</span><span>Axios</span></div>
+      <!-- AI Systems -->
+      <div class="skill-pill" data-group="ai"><span class="skill-icon">LC</span><span>LangChain</span></div>
+      <div class="skill-pill" data-group="ai"><span class="skill-icon">LG</span><span>LangGraph</span></div>
+      <div class="skill-pill" data-group="ai"><span class="skill-icon">CAI</span><span>CrewAI</span></div>
 
-      <div class="skill-pill" data-group="design"><span class="skill-icon">◌</span><span>Figma</span></div>
+      <!-- DevOps & Cloud -->
+      <div class="skill-pill" data-group="cloud"><span class="skill-icon">Dck</span><span>Docker</span></div>
+      <div class="skill-pill" data-group="cloud"><span class="skill-icon">TF</span><span>Terraform</span></div>
+      <div class="skill-pill" data-group="cloud"><span class="skill-icon">AWS</span><span>AWS</span></div>
+      <div class="skill-pill" data-group="cloud"><span class="skill-icon">GHA</span><span>Github Actions</span></div>
+      <div class="skill-pill" data-group="cloud"><span class="skill-icon">CF</span><span>Cloudflare</span></div>
     </div>
   </div>
 </section>
