@@ -67,10 +67,6 @@ body.theme-transitioning{animation:flash-effect .4s ease-out}
   text-decoration:none;transition:color .2s
 }
 .nav-links a:hover,.nav-links a.active{color:var(--ink)}
-.nav-links a.active:after{
-  content:'';position:absolute;left:50%;bottom:-10px;
-  width:3px;height:3px;border-radius:50%;background:var(--acid)
-}
 .theme-toggle{
   justify-self:end;display:grid;place-items:center;
   width:36px;height:36px;padding:0;
