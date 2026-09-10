@@ -113,11 +113,37 @@ button{color:inherit}
   text-transform:uppercase;letter-spacing:.12em
 }
 .profile-strip{
+  position:relative;
+  overflow:hidden;
   display:grid;
   grid-template-columns:120px minmax(240px,1fr) minmax(200px,340px) 40px;
   gap:28px;align-items:center;
   padding:36px 16px 42px;
   border-bottom:1px solid var(--line)
+}
+.profile-strip > *{position:relative;z-index:1}
+.shooting-stars{position:absolute;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.star{
+  position:absolute;
+  top:50%;left:50%;
+  width:100px;height:1px;
+  background:linear-gradient(90deg,var(--acid),transparent);
+  border-radius:50%;
+  animation:shootingStar 3s linear infinite;
+  opacity:0;
+  transform-origin: left center;
+}
+.star:nth-child(1){top:20%;left:80%;animation-delay:0s;animation-duration:3s}
+.star:nth-child(2){top:60%;left:100%;animation-delay:1.2s;animation-duration:2.5s}
+.star:nth-child(3){top:80%;left:110%;animation-delay:2.4s;animation-duration:3.5s}
+.star:nth-child(4){top:10%;left:50%;animation-delay:0.8s;animation-duration:2.8s}
+@keyframes shootingStar{
+  0%{transform:rotate(-45deg) translateX(0);opacity:1;width:0}
+  30%{opacity:1;width:100px}
+  100%{transform:rotate(-45deg) translateX(-500px);opacity:0;width:0}
+}
+@media(prefers-reduced-motion:reduce){
+  .star{animation:none;display:none}
 }
 .profile-strip .portrait-wrap{position:relative;width:100px;height:100px}
 .portrait{
