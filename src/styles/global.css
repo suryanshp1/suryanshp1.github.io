@@ -30,12 +30,23 @@
 /* ─── Reset & base ───────────────────────────────────────── */
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;background:var(--bg)}
-body{margin:0;background:var(--bg);color:var(--ink);font-size:15px;line-height:1.6;overflow-x:hidden;transition:background .35s,color .35s,filter .35s}
+body{margin:0;background:var(--bg);color:var(--ink);font-size:15px;line-height:1.6;overflow-x:hidden}
 a{color:inherit}
 button{color:inherit}
 ::selection{background:var(--acid);color:var(--acid-ink)}
-@keyframes flash-effect{0%{filter:brightness(1)}30%{filter:brightness(1.5) contrast(1.1)}100%{filter:brightness(1)}}
-body.theme-transitioning{animation:flash-effect .4s ease-out}
+
+/* ─── Theme transition — circular ripple wipe ────────────── */
+::view-transition-old(root){
+  animation:none;
+  mix-blend-mode:normal
+}
+::view-transition-new(root){
+  mix-blend-mode:normal
+}
+@media(prefers-reduced-motion:reduce){
+  ::view-transition-old(root),
+  ::view-transition-new(root){animation:none !important}
+}
 .inner{width:min(var(--max),calc(100% - var(--gutter)*2));margin-inline:auto}
 .grid-section{
   border-inline:1px solid var(--line-soft);
