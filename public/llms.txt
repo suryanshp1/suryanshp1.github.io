@@ -1,0 +1,53 @@
+# Suryansh Pandey
+
+**Role**: Full Stack & AI Systems Engineer
+**Location**: Ghazipur, India (working globally)
+**Tagline**: Building dependable distributed systems, security automation, and useful AI products.
+
+## About
+Suryansh Pandey is a senior software engineer focused on scalable full stack systems and practical AI. With over four years in cybersecurity SaaS, he has built platforms that serve hundreds of enterprise tenants and process millions of security records. His work sits at the intersection of distributed infrastructure, safe automation, and products people can actually use—from vulnerability remediation agents to a privacy-first suite of browser tools.
+
+## Projects
+
+### Veedz AI
+- **URL**: https://veedzai.com/
+- **Description**: AI-powered 2x and 4x upscaling for images and videos that runs entirely in the browser. It is a fast, private tool where files never leave the device.
+- **Tags**: 4X Upscaling, Local AI, Privacy, Free
+
+### PDFolio
+- **URL**: https://thepdfolio.com/
+- **Description**: Free browser tools to organize, edit, convert, and protect sensitive documents. Built with a local-first approach so files are never uploaded.
+- **Tags**: PDF Tools, Privacy, Local-first, Free
+
+### Advanced Coding CLI
+- **URL**: https://github.com/suryanshp1/advance-coding-cli-agent
+- **Description**: An agentic coding companion that lives in the terminal. It is a capable CLI agent with Model Context Protocol (MCP) support and an interactive terminal interface—built to understand a codebase, plan changes, and help ship them.
+- **Tags**: Python, LLMs, MCP, TUI
+
+### Simple CDC
+- **URL**: https://github.com/suryanshp1/simple-cdc
+- **Description**: Database changes, captured and streamed in near real-time. A lightweight Change Data Capture pipeline with asynchronous event processing for reliable synchronization between distributed services.
+- **Tags**: Python, PostgreSQL, Event-driven, Async
+
+## Experience
+
+### Strobes Security (Nov 2021 — Jan 2026)
+- **Senior Software Engineer (Aug 2025 — Jan 2026)**: Led high-scale data and integration work, including a bi-directional GitHub sync processing 10K+ daily events, a 500K+ record export engine, and tenant-aware analytics for 300+ enterprise environments.
+- **Software Engineer (Jan 2024 — Jul 2025)**: Built AI security assistants, autonomous code remediation, rollback-safe cloud workflows, scalable reporting, scanner ingestion, and enterprise dashboard infrastructure.
+- **Junior Software Engineer (Apr 2022 — Dec 2023)**: Optimized bulk operations and API performance, designed audit history and archival systems, and shipped workflow integrations across a multi-tenant security platform.
+- **Software Engineering Intern (Nov 2021 — Mar 2022)**: Started with production backend development across Python, Django, GraphQL, PostgreSQL, and Docker.
+
+## Technical Skills
+- **Languages**: Python, JavaScript, TypeScript
+- **Backend**: Django, FastAPI, GraphQL, gRPC, Celery, RabbitMQ, Kafka
+- **Frontend**: React, Next.js, Astro
+- **Databases**: PostgreSQL, MongoDB, Elasticsearch, Redis
+- **AI**: LangChain, LangGraph, CrewAI
+- **Cloud & DevOps**: Docker, Terraform, AWS, GitHub Actions, Cloudflare
+
+## Contact & Links
+- **GitHub**: https://github.com/suryanshp1
+- **LinkedIn**: https://www.linkedin.com/in/suryanshp1/
+- **Twitter/X**: https://x.com/curosepian
+- **Email**: suryanshp1@gmail.com
+- **Website**: https://suryanshpandey.dev/
